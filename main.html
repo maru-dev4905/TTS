@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTS</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -13,39 +15,210 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">
-            <a href="#">
-            </a>
-        </h1>
-        <nav class="gnb">
-            <ul>
-                <li>
-                    <a href="#">menu1</a>
-                </li>
-                <li>
-                    <a href="#">menu2</a>
-                </li>
-                <li>
-                    <a href="#">menu3</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul class="depth_one">
+                    <li>
+                        <a href="./about.html">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">서비스</a>
+                        <ul class="depth_two">
+                            <li>
+                                <a href="./global_advertising.html">글로벌 종합 광고 대행</a>
+                            </li>
+                            <li>
+                                <a href="./video_production.html">영상 제작</a>
+                            </li>
+                            <li>
+                                <a href="./travela.html">여행/관광</a>
+                            </li>
+                            <li>
+                                <a href="./trade.html">유통/무역</a>
+                            </li>
+                            <li>
+                                <a href="./bidding_project.html">공공입찰사업</a>
+                            </li>
+                            <li>
+                                <a href="./viral_marketing.html">바이럴 마케팅</a>
+                            </li>
+                            <li>
+                                <a href="./corporate_agent.html">기업 행사 대행</a>
+                            </li>
+                            <li>
+                                <a href="./special_marketing.html">특수 마케팅</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">포트폴리오</a>
+                        <ul class="depth_two">
+                            <li>
+                                <a href="./portfolio.html">포트폴리오</a>
+                            </li>
+                            <li>
+                                <a href="./partners.html">파트너사</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./quote.html">견적안내</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">고객센터</a>
+                        <ul class="depth_two">
+                            <li>
+                                <a href="./notice.html">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="./inquiry.html">1:1 문의</a>
+                            </li>
+                            <li>
+                                <a href="./qna.html">Q&A</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            
+        <section class="sec_kv">
+            <div class="img_box">
+                <img src="./images/visual/main_visual_pc.png" alt="메인 배너" class="m_hide">
+            </div>
+            <div class="kv_txt">
+                <h2>TTS</h2>
+                <h3>
+                    TRANDING 
+                    <span>&</span>
+                    TOUR SERVICE
+                </h3>
+            </div>
         </section>
-        <section>
-
+        <!-- <section class="sec_about">
+            <div class="inner">
+                <div class="sec_text">
+                    <h2>회사소개</h2>
+                    <p>
+                        (주)TTS는 글로벌종합광고 대행, 관광, 유통, 바이럴마케팅, 특수마케팅 운영관리 전문업체입니다
+                        <br>
+                        전문화된 솔루션으로 고객사의 성장을 위해 최상의 서비스를 제공합니다                        
+                    </p>
+                </div>
+                <div class="about_swiper_wrapper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="sec_inquiry">
+            <div class="inner">
+                <div class="sec_txt">
+                    <h2>제휴 및 투자 문의</h2>
+                    <p>TTS와 제휴 및 투자 관련하여 문의사항이 있으시면 남겨주세요</p>
+                </div>
+                <form action="#" method="post" class="inquiry_form">
+                    <div class="row">
+                        <input type="text" placeholder="NAME">
+                    </div>
+                    <div class="row">
+                        <input type="email" placeholder="E-MAIL">
+                    </div>
+                    <div class="row">
+                        <input type="tel" placeholder="PHONE NUMBER">
+                    </div>
+                    <div class="row">
+                        <textarea name="message" placeholder="MESSAGE"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit">메세지 보내기</button>
+                    </div>
+                </form>
+            </div>
         </section>
-        <section>
-
+        <section class="sec_map">
+            <div class="inner">
+                <div class="sec_txt">
+                    <h2>오시는 길</h2>
+                    <p>TTS로 오시는 길은 항상 열려있습니다</p>
+                </div>
+                <div class="img_box">
+                    <img src="./images/visual/map_pc.png" alt="오시는 길" class="m_hide">
+                    <!-- <img src="./images/visual/map_mo.png" alt="오시는 길" class="m_show"> -->
+                </div>
+            </div>
+        </section>
+        <section class="sec_partner">
+            <div class="inner">
+                <div class="sec_txt">
+                    <h2>파트너</h2>
+                    <p>TTS와의 성공적인 파트너쉽을 인정한 파트너사입니다</p>
+                </div>
+                <div class="partner_list">
+                    <img src="./images/partners/main_partner01_pc.png" alt="GAGA CLEAN">
+                    <img src="./images/partners/main_partner02_pc.png" alt="Kyren">
+                    <img src="./images/partners/main_partner03_pc.png" alt="앙스샵">
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="footer_top">
+            <div class="inner">
+                <h1 class="logo"></h1>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="inner">
+                <div class="fot_left">
+                    <h2>고객센터 1544-0000</h2>
+                    <div class="date">
+                        <p>
+                            근무시간 : 월~금 09:00 - 18:00
+                        </p>
+                        <p>
+                            휴무요일 : 주말·공휴일                     
+                        </p>
+                    </div>
+                    <div class="link_group">
+                        <a href="./qna.html">자주 묻는 질문</a>
+                        <a href="./inquiry.html">1:1 문의</a>
+                    </div>
+                    <p class="copyright">
+                        Copyright© TTS Corporation. All Rights Reserved
+                    </p>
+                </div>
+                <div class="fot_right">
+                    <ul class="social_list">
+                        <li>
+                            <a href="#" class="youtube"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram"></a>
+                        </li>
+                    </ul>
+                    <p>
+                        TTS 대표이사 OOO
+                        <br>
+                        서울 노원구 월계동 초안아파트 204동 103호
+                        <br>
+                        사업자등록번호 000-00-00000                        
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="./js/scroll.js"></script>
